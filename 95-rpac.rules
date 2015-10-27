@@ -1,0 +1,1 @@
+KERNEL=="sda", RUN+="/root/rpac"

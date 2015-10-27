@@ -1,0 +1,24 @@
+#Example config for RPAC
+
+#Allowed modes are
+# down   - delete this part of interfaces so that the iface will be down on reset
+#          also bring it down now
+# leave  - do not modify this section of /etc/network/interfaces and don't bring
+#          it up or down
+# dhcp   - bring this interface up using dhcp
+# static - bring this interface up with a static address 
+eth_mode: down
+#These are only required if using static
+#eth_ip: 10.4.11.3
+#eth_gateway: 10.4.11.1
+
+#The modes here are the same as for ethernet
+wifi_mode: dhcp
+wifi_ssid: mywifinetwork
+wifi_psk: thepassword
+
+#these are only required if using static
+#wifi_ip: 10.4.10.220
+#wifi_gateway: 10.4.10.1
+
+
